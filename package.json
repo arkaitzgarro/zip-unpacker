@@ -1,0 +1,75 @@
+{
+  "name": "zip-unpacker",
+  "description": "Zip unpacker tool for Node.js",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "standard && gulp test",
+    "coverage": "gulp coverage",
+    "prepublish": "gulp build",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "author": {
+    "name": "Arkaitz Garro",
+    "email": "arkaitz.garro@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arkaitzgarro/zip-unpacker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/arkaitzgarro/zip-unpacker/issues"
+  },
+  "license": "MIT",
+  "files": [
+    "dist/"
+  ],
+  "bin": {
+    "zip-unpacker": "./dist/bin/cli.js"
+  },
+  "devDependencies": {
+    "babel-core": "^6.3.26",
+    "babel-preset-es2015": "^6.3.13",
+    "chai": "^3.4.1",
+    "coveralls": "^2.11.3",
+    "cz-conventional-changelog": "^1.1.5",
+    "del": "^2.2.0",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^6.1.1",
+    "gulp-istanbul": "^0.10.3",
+    "gulp-load-plugins": "^1.1.0",
+    "gulp-mocha": "^2.2.0",
+    "gulp-plumber": "^1.0.1",
+    "isparta": "^4.0.0",
+    "istanbul": "^0.4.1",
+    "mocha": "^2.1.0",
+    "semantic-release": "^4.3.5",
+    "sinon": "^1.17.2",
+    "sinon-chai": "^2.8.0",
+    "standard": "^5.4.1"
+  },
+  "dependencies": {
+    "yargs": "^3.31.0"
+  },
+  "babelOptions": {
+    "mochaGlobals": [
+      "stub",
+      "spy",
+      "expect"
+    ]
+  },
+  "standard": {
+    "globals": [
+      "describe",
+      "it",
+      "expect"
+    ]
+  },
+  "engines": {
+    "node": ">= 0.12.7"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
