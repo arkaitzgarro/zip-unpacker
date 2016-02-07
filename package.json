@@ -2,6 +2,7 @@
   "name": "zip-unpacker",
   "description": "Zip unpacker tool for Node.js",
   "main": "dist/index.js",
+  "version": "1.0.0",
   "scripts": {
     "test": "standard && gulp test",
     "coverage": "gulp coverage",
@@ -48,6 +49,7 @@
     "standard": "^5.4.1"
   },
   "dependencies": {
+    "jszip": "^2.5.0",
     "yargs": "^3.31.0"
   },
   "babelOptions": {
